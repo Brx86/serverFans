@@ -75,7 +75,7 @@ def forceInfo(uid):
 @app.route("/reset")
 def reset():
     global n
-    n = 0
+    n = 20
     return "Reseted!"
 
 
@@ -100,5 +100,5 @@ def kemo():
 
 if __name__ == "__main__":
     n = 0
-    app.run(host="0.0.0.0", port=10, debug=0, threaded=0)
+    app.run(host="0.0.0.0", port=10, threaded=0)
 
